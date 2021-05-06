@@ -24,3 +24,14 @@ test('Sorts shops by distance', () => {
   expect(sortedShops[sortedShops.length - 2].name).toBe('2nd farthest');
   expect(sortedShops[sortedShops.length - 1].name).toBe('Max distance');
 });
+
+test('It returns a list of coffee shops that will fit onto the screen', () => {
+  const sortByRating = sortCoffeeShops(250, shops, 'rating', customerLocation);
+  expect(sortByRating.length).toBe(5);
+
+  const sortByTypes = sortCoffeeShops(500, shops, 'typesOfCoffee', customerLocation);
+  expect(sortByTypes.length).toBe(10);
+
+  const sortByDistance = sortCoffeeShops(1000, shops, 'distance', customerLocation);
+  expect(sortByDistance.length).toBe(16);
+});
