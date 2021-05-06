@@ -1,0 +1,23 @@
+{
+  "name": "sortcoffeshops",
+  "version": "1.0.0",
+  "description": "Sort a list of coffee shops",
+  "main": "generateShops.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/collin-newman/sortCoffeShops.git"
+  },
+  "author": "collin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/collin-newman/sortCoffeShops/issues"
+  },
+  "homepage": "https://github.com/collin-newman/sortCoffeShops#readme",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "jest": "^26.6.3"
+  }
+}
