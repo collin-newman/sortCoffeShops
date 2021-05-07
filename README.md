@@ -4,22 +4,24 @@
 
 Given a list of coffee shops, the customer's current location, a property to sort by, and the customer's screen size return a list of coffee shops sorted in descending order (ascending if sorting by 'distance') by the input property to sort by.
 
-```
-screenSize: String;
+```typescript
+var screenSize: string;
 
-Interface coffeeShops = CoffeeShop[];
-
-Interface CoffeeShop = {
-  name: String,
-  location: [lat, long],
-  rating: Number,
-  typesOfCoffee: Number,
-  picture: String,
+interface CoffeeShop {
+  name: String;
+  location: [lat, long];
+  rating: Number;
+  typesOfCoffee: Number;
+  picture: String;
 };
 
-propertyToSortBy: String;
+var coffeeShops = CoffeeShop[];
 
-customerLocation: [Latitude: Number, Longitude: Number];
+var propertyToSortBy: string;
+
+type locationInterface = [number, number];
+
+var customerLocation: locationInterface;
+```
 
 Supported properties to sort by: 'rating', 'typesOfCoffee', 'distance'.
-```
