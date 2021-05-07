@@ -31,4 +31,4 @@ var customerLocation: locationInterface;
 var ascending: boolean;
 ```
 
-Supported properties to sort by: 'rating', 'typesOfCoffee', 'distance', 'name'.
+Supported properties to sort by: 'rating', 'typesOfCoffee', 'location', 'name'.
