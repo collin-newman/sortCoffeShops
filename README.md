@@ -7,9 +7,11 @@ Given a list of coffee shops, the customer's current location, a property to sor
 ```typescript
 var screenSize: string;
 
+type locationInterface = [number, number];
+
 interface CoffeeShop {
   name: String;
-  location: [lat, long];
+  location: locationInterface;
   rating: Number;
   typesOfCoffee: Number;
   picture: String;
@@ -18,8 +20,6 @@ interface CoffeeShop {
 var coffeeShops = CoffeeShop[];
 
 var propertyToSortBy: string;
-
-type locationInterface = [number, number];
 
 var customerLocation: locationInterface;
 
