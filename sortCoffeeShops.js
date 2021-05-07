@@ -11,7 +11,7 @@ module.exports = sortCoffeeShops = (screenSize, coffeeShops, property, customerL
   let sortedShops = coffeeShops.sort((a, b) => {
     let item1 = a[property];
     let item2 = b[property];
-    if (property === 'distance') {
+    if (property === 'location') {
       item1 = calculateDistance(a['location'][0], a['location'][1], customerLocation[0], customerLocation[1]);
       item2 = calculateDistance(b['location'][0], b['location'][1], customerLocation[0], customerLocation[1]);
     }

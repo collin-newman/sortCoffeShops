@@ -26,13 +26,13 @@ test('Sorts shops by types of coffee', () => {
 });
 
 test('Sorts shops by distance', () => {
-  const sortedShops = sortCoffeeShops(10000, shops, 'distance', customerLocation, true);
+  const sortedShops = sortCoffeeShops(10000, shops, 'location', customerLocation, true);
   expect(sortedShops[0].name).toBe('Min distance');
   expect(sortedShops[1].name).toBe('Min rating');
   expect(sortedShops[sortedShops.length - 2].name).toBe('2nd farthest');
   expect(sortedShops[sortedShops.length - 1].name).toBe('Max distance');
 
-  const sortedShopsDesc = sortCoffeeShops(10000, shops, 'distance', customerLocation);
+  const sortedShopsDesc = sortCoffeeShops(10000, shops, 'location', customerLocation);
   expect(sortedShopsDesc[0].name).toBe('Max distance');
   expect(sortedShopsDesc[1].name).toBe('2nd farthest');
   expect(sortedShopsDesc[sortedShopsDesc.length - 2].name).toBe('Min rating');
