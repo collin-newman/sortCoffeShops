@@ -2,7 +2,7 @@
 
 `sortCoffeShops(screenSize, coffeeShops, propertyToSortBy, customerLocation)`
 
-Given a list of coffee shops, the customer's current location, a property to sort by, and the customer's screen size return a list of coffee shops sorted in descending order (ascending if sorting by 'distance') by the input property to sort by.
+Given a list of coffee shops, the customer's current location, a property to sort by, and the customer's screen size return a list of coffee shops sorted in ascending or descending order by the input property to sort by.
 
 ```typescript
 var screenSize: string;
