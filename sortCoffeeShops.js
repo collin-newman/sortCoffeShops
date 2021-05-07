@@ -16,6 +16,16 @@ module.exports = sortCoffeeShops = (screenSize, coffeeShops, property, customerL
       if (shop1Distance > shop2Distance) { return 1; }
       return 0;
     }
+
+    // alphabetic sorting should ascending
+    if (property === 'name') {
+      if (a[property] < b[property]) { return -1; }
+      if (a[property] > b[property]) { return 1; }
+      return 0;
+
+    }
+
+    // numeric sorting should be descending
     if (a[property] < b[property]) { return 1; }
     if (a[property] > b[property]) { return -1; }
     return 0;
