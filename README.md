@@ -1,6 +1,6 @@
 # Coffee Shop Sorting
 
-`sortCoffeShops(screenSize, coffeeShops, propertyToSortBy, customerLocation)`
+`sortCoffeShops(screenSize, coffeeShops, propertyToSortBy, customerLocation, ascending? = false)`
 
 Given a list of coffee shops, the customer's current location, a property to sort by, and the customer's screen size return a list of coffee shops sorted in ascending or descending order by the input property to sort by.
 
@@ -22,6 +22,8 @@ var propertyToSortBy: string;
 type locationInterface = [number, number];
 
 var customerLocation: locationInterface;
+
+var ascending: boolean;
 ```
 
-Supported properties to sort by: 'rating', 'typesOfCoffee', 'distance'.
+Supported properties to sort by: 'rating', 'typesOfCoffee', 'distance', 'name'.
