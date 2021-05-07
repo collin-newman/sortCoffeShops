@@ -1,10 +1,4 @@
-const generateShops = require('./helperFunctions/generateShops');
-const getCurrentLocation = require('./helperFunctions/getCurrentLocation');
 const calculateDistance = require('./helperFunctions/calculateDistance');
-
-const shops = generateShops(20);
-const customerLocation = getCurrentLocation();
-
 
 module.exports = sortCoffeeShops = (screenSize, coffeeShops, property, customerLocation, ascending = false) => {
   const arraySize = Math.floor(screenSize / 50);
