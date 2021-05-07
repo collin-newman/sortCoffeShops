@@ -35,3 +35,11 @@ test('It returns a list of coffee shops that will fit onto the screen', () => {
   const sortByDistance = sortCoffeeShops(1000, shops, 'distance', customerLocation);
   expect(sortByDistance.length).toBe(16);
 });
+
+test('It sorts by name ascending', () => {
+  const sortByName = sortCoffeeShops(1000, shops, 'name', customerLocation);
+  expect(sortByName[0].name).toBe('2nd farthest');
+  expect(sortByName[1].name).toBe('Dach - Harber Coffee Shop');
+  expect(sortByName[sortByName.length - 2].name).toBe('VonRueden - Krajcik Coffee Shop');
+  expect(sortByName[sortByName.length - 1].name).toBe('Ward and Sons Coffee Shop');
+});
